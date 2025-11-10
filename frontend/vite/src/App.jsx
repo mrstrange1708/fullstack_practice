@@ -50,8 +50,8 @@ export default function App() {
       setUsers(data);
     } catch (err) {
       alert("Unauthorized! Please login again.");
+      console.log(err)
       localStorage.removeItem("token");
-      setView("login");
     }
   };
 
